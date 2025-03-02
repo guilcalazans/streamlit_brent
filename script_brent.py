@@ -6,7 +6,7 @@ st.set_page_config(
     layout = 'wide'
 )
 
-st.header("**Painel de Preço de Fechamento e Dividendos de ações do Brent**")
+st.header("**Painel de Preço de Fechamento de ações do Brent**")
 
 # ticker = st.text_input('Digite o ticker da ação','BBAS3')
 ticker = 'BZ=F'
@@ -25,4 +25,3 @@ with col2:
     st.write(f"**Preço Atual: $** {empresa.info['previousClose']}")
 
 st.line_chart(tickerDF.Close)
-st.bar_chart(tickerDF.Dividends)
